@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d  %-5p   {%-20m}   [%c] %n" />
+		</layout>
+	</appender>
+
+	<appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="temp/mylog.txt" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d  %-5p   {%-20m}   [%c] %n" />
+		</layout>
+	</appender>
+
+
+	<!-- spring -->
+	<logger name="org.springframework">
+		<level value="error" />
+	</logger>
+
+	<!-- axis 
+	<logger name="org.apache.axis">
+		<level value="error" />
+	</logger>
+-->
+	<!-- hibernate -->
+	<logger name="org.hibernate">
+		<level value="error" />
+	</logger>
+
+	<!-- log SQL statements (same as show_sql=true) -->
+	<logger name="org.hibernate.SQL">
+		<level value="error" />
+	</logger>
+
+	<!-- log parameter binding -->
+	<logger name="org.hibernate.type">
+		<level value="error" />
+	</logger>
+
+	<!-- log ddl statements -->
+	<logger name="org.hibernate.tool.hbm2ddl">
+		<level value="error" />
+	</logger>
+
+	
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+
+</log4j:configuration>
