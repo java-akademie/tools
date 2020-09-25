@@ -1,6 +1,6 @@
 package ch.jmildner.tools_ee;
 
-import ch.jmildner.tools_ee.Channel;
+//import ch.jmildner.tools_ee.Channel;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
