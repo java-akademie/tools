@@ -1,5 +1,9 @@
 package ch.jmildner.tools_ee;
 
+<<<<<<< HEAD
+=======
+//import ch.jmildner.tools_ee.Channel;
+>>>>>>> branch 'master' of https://github.com/java-akademie/tools.git
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

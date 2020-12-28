@@ -12,8 +12,13 @@ package ch.jmildner.tools_ee;
  */
 public final class BoundedBuffer implements Queue
 {
+<<<<<<< HEAD
 	// eine aenderung...
 	
+=======
+	// eine aenderung
+
+>>>>>>> branch 'master' of https://github.com/java-akademie/tools.git
 	private boolean test = false;
 
 	private DebugFrame dframe;
@@ -108,7 +113,9 @@ public final class BoundedBuffer implements Queue
 	}
 
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see ch.jmb.eetools.Queue#get()
 	 */
 	public final Object get() throws InterruptedException
@@ -145,8 +152,7 @@ public final class BoundedBuffer implements Queue
 			// vermindern und den getIndex erhoehen.
 			old = buffer[getIndex];
 
-			debug("get: belegte Plaetze vor dem Entnehmen: "
-					+ usedCounter + ", entnommen vom Platz: " + getIndex
+			debug("get: belegte Plaetze vor dem Entnehmen: " + usedCounter + ", entnommen vom Platz: " + getIndex
 					+ ", objekt: " + old); // test
 
 			showMessage("objekt entnehmen: " + old); // test
@@ -172,7 +178,9 @@ public final class BoundedBuffer implements Queue
 
 
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see ch.jmb.eetools.Queue#put(java.lang.Object)
 	 */
 	public void put(Object anObject) throws InterruptedException
@@ -211,9 +219,8 @@ public final class BoundedBuffer implements Queue
 			// ein Object in den Buffer einfuegen, den emptyCounter
 			// vermindern und den putIndex erhoehen.
 
-			debug("put: freie   Plaetze vor dem Einfuegen: "
-					+ emptyCounter + ", eingefuegt an Platz: "
-					+ putIndex + ", objekt: " + anObject); // test
+			debug("put: freie   Plaetze vor dem Einfuegen: " + emptyCounter + ", eingefuegt an Platz: " + putIndex
+					+ ", objekt: " + anObject); // test
 
 			buffer[putIndex] = anObject;
 
@@ -244,8 +251,7 @@ public final class BoundedBuffer implements Queue
 	{
 		if (test)
 		{
-			dframe.setCounters(emptyCounter, usedCounter,
-					minEmptyCounter, maxUsedCounter);
+			dframe.setCounters(emptyCounter, usedCounter, minEmptyCounter, maxUsedCounter);
 		}
 	}
 
