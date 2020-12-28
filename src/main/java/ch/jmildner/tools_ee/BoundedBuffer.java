@@ -12,13 +12,6 @@ package ch.jmildner.tools_ee;
  */
 public final class BoundedBuffer implements Queue
 {
-<<<<<<< HEAD
-	// eine aenderung...
-	
-=======
-	// eine aenderung
-
->>>>>>> branch 'master' of https://github.com/java-akademie/tools.git
 	private boolean test = false;
 
 	private DebugFrame dframe;
