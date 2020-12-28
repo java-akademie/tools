@@ -12,7 +12,7 @@ package ch.jmildner.tools_ee;
  */
 public final class BoundedBuffer implements Queue
 {
-	// eine aenderung
+	// eine aenderung...
 	
 	private boolean test = false;
 
