@@ -6,7 +6,6 @@ package ch.jmildner.tools;
  */
 public final class ValidateHelper
 {
-
     /**
      * Konstruktor.
      *
