@@ -11,8 +11,7 @@ package ch.jmildner.tools;
  */
 public class AgileTest
 {
-  
-    public int add(String s1, String s2)
+      public int add(String s1, String s2)
     {
         int i1 = Integer.parseInt(s1);
         int i2 = Integer.parseInt(s2);
