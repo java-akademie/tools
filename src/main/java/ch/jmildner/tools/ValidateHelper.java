@@ -3,7 +3,7 @@ package ch.jmildner.tools;
 /**
  * @author johann
  *
- */
+ */ 
 public final class ValidateHelper
 {
     /**
