@@ -55,7 +55,7 @@ public class TrigonometricToolsUnirtTest extends TestCase
 		testCosinussatz1(3, 90, 4);
 		testCosinussatz1(4, 90, 3);
 
-		MyTools.uebOut("testCosinussatz2", 3);
+		MyTools.h2("testCosinussatz2", 3);
 		testCosinussatz2(3, 4, 6);
 		testCosinussatz2(111, 112, 11);
 		testCosinussatz2(111, 122, 11);

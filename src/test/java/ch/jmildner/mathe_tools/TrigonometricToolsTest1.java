@@ -14,7 +14,7 @@ public class TrigonometricToolsTest1
 
     private static void checkWinkel()
     {
-        MyTools.uebOut("checkWinkel", 2);
+        MyTools.h2("checkWinkel", 2);
 
         checkWinkel(33, 47, 100);
         checkWinkel(0, 2, 180);
@@ -24,7 +24,7 @@ public class TrigonometricToolsTest1
 
     private static void getWinkelSSS()
     {
-        MyTools.uebOut("getWinkelSSS", 2);
+        MyTools.h2("getWinkelSSS", 2);
 
         getWinkelSSS(3, 4, 5);
         getWinkelSSS(3, 5, 3);
@@ -38,7 +38,7 @@ public class TrigonometricToolsTest1
 
     private static void checkSeitenlaengen()
     {
-        MyTools.uebOut("checkSeitenlaengen", 2);
+        MyTools.h2("checkSeitenlaengen", 2);
 
         checkSeitenlaengen(1, 2, 3);
         checkSeitenlaengen(1, 1, 2);

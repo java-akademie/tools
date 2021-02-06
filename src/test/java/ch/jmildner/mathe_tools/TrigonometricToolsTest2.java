@@ -18,7 +18,7 @@ public class TrigonometricToolsTest2
 
     public static void testSSS()
     {
-        MyTools.uebOut("testSSS", 3);
+        MyTools.h2("testSSS", 3);
 
         int MIN = 100;
         int MAX = 200;
@@ -35,7 +35,7 @@ public class TrigonometricToolsTest2
 
     public static void testWSW()
     {
-        MyTools.uebOut("testWSW", 3);
+        MyTools.h2("testWSW", 3);
         testWSW(11, 44, 15);
         testWSW(30, 5, 50);
         testWSW(123, 9, 12);
@@ -45,7 +45,7 @@ public class TrigonometricToolsTest2
 
     public static void testSWS()
     {
-        MyTools.uebOut("testSSW", 3);
+        MyTools.h2("testSSW", 3);
         testSWS(1, 179.999, 41);
         testSWS(3, 90, 4);
         testSWS(5, 22, 12);

@@ -8,7 +8,7 @@ public class QuadratischeGleichung
     public static void main(String[] args)
     {
 
-        MyTools.uebOut("Quadratische Gleichung");
+        MyTools.h2("Quadratische Gleichung",2);
 
         loeseQuadratischeGleichung(3, -2, -1);
         loeseQuadratischeGleichung(1, 2, 2);
@@ -18,7 +18,7 @@ public class QuadratischeGleichung
         loeseQuadratischeGleichung(1, 11, 11);
         loeseQuadratischeGleichung(1, 14, 12);
 
-        MyTools.uebOut("ABC Form ", 3);
+        MyTools.h2("ABC Form ", 3);
         for (int i = 1; i <= 100; i++)
         {
             int a = MyTools.getRandom(1, 100);
@@ -30,7 +30,7 @@ public class QuadratischeGleichung
             loeseQuadratischeGleichung(a, b, c);
         }
  
-        MyTools.uebOut("PQ Form ", 3);
+        MyTools.h2("PQ Form ", 3);
         for (int i = 1; i <= 100; i++)
         {
             int p = MyTools.getRandom(1, 100);

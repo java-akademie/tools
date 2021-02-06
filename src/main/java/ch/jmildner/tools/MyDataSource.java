@@ -152,7 +152,7 @@ public class MyDataSource
 
     private void setConnection() throws ClassNotFoundException, SQLException
     {
-        MyTools.uebOut("Database: " + database, 1);
+        MyTools.h2("Database: " + database, 1);
 
         String DRV = props.getProperty(database + ".drv");
         String URL = props.getProperty(database + ".url");

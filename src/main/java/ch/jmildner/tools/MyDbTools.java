@@ -65,7 +65,7 @@ public final class MyDbTools {
 	}
 
 	private static void zeigeMetadaten(final ResultSetMetaData md) throws SQLException {
-		MyTools.uebOut("Metadaten: ", 1);
+		MyTools.h2("Metadaten: ", 1);
 
 		for (int i = 1; i <= md.getColumnCount(); i++) {
 			System.out.printf("%-21S ", md.getColumnLabel(i));
@@ -81,7 +81,7 @@ public final class MyDbTools {
 	}
 
 	private static void zeigeDaten(final ResultSet rs, final ResultSetMetaData md) throws SQLException {
-		MyTools.uebOut("Daten: ", 1);
+		MyTools.h2("Daten: ", 1);
 
 		int anz = md.getColumnCount();
 

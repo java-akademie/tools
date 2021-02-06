@@ -15,7 +15,7 @@ public class Vector2Test
 
 	private static void test4()
 	{
-		MyTools.uebOut("test4 - ScalarProdukt, Winkel", 2);
+		MyTools.h2("test4 - ScalarProdukt, Winkel", 2);
 		Vector2D v1 = new Vector2D(new Point(2, 3), 0, 3);
 		Vector2D v2 = new Vector2D(new Point(2, 3), 4, 0);
 		Vector2D v3 = Vector2D.sub(v1, v2);
@@ -38,7 +38,7 @@ public class Vector2Test
 
 	private static void test3()
 	{
-		MyTools.uebOut("test3", 2);
+		MyTools.h2("test3", 2);
 		Vector2D v1 = new Vector2D(1, 3);
 		v1.show("v1");
 		Vector2D e1 = Vector2D.mult(v1, 2);
@@ -71,7 +71,7 @@ public class Vector2Test
 
 	static void test1()
 	{
-		MyTools.uebOut("test1", 2);
+		MyTools.h2("test1", 2);
 		Vector2D v1 = new Vector2D(1, 3);
 		Vector2D v2 = new Vector2D(4, 3);
 
@@ -91,7 +91,7 @@ public class Vector2Test
 
 	static void test2()
 	{
-		MyTools.uebOut("test2", 2);
+		MyTools.h2("test2", 2);
 
 		Point startPoint = new Point(-1, -1);
 

@@ -8,7 +8,7 @@ public class ComplexUnitTest extends TestCase
 
     public void test1()
     {
-        MyTools.uebOut("Test 1", 3);
+        MyTools.h2("Test 1", 3);
 
         Complex c;
         double r = 2;
@@ -45,7 +45,7 @@ public class ComplexUnitTest extends TestCase
 
     public void test2()
     {
-        MyTools.uebOut("Test 2", 3);
+        MyTools.h2("Test 2", 3);
 
         Complex c;
         double r;// = 122.258987;
@@ -79,7 +79,7 @@ public class ComplexUnitTest extends TestCase
 
     public void test3()
     {
-        MyTools.uebOut("Test 3", 3);
+        MyTools.h2("Test 3", 3);
 
         Complex p, c;
         double r ;//= 6.44;
@@ -99,7 +99,7 @@ public class ComplexUnitTest extends TestCase
 
     public void test4()
     {
-        MyTools.uebOut("Test 4", 3);
+        MyTools.h2("Test 4", 3);
 
         Complex p, c;
 

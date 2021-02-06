@@ -15,20 +15,20 @@ public class DateTimeToolsTest
 	@Test
 	public void test()
 	{
-		MyTools.uebOut("DateTimeToolsMain", 2);
+		MyTools.h2("DateTimeToolsMain", 2);
 
-		MyTools.uebOut("Current Date und Time", 2);
+		MyTools.h2("Current Date und Time", 2);
 		out(DateTimeTools.getCurrentDate());
 		out(DateTimeTools.getCurrentTime());
 
-		MyTools.uebOut("Current Timestamps", 2);
+		MyTools.h2("Current Timestamps", 2);
 		for (int i = 1; i <= 10; i++)
 			out(DateTimeTools.getCurrentTimestamp(true));
 		System.out.println();
 		for (int i = 1; i <= 10; i++)
 			out(DateTimeTools.getCurrentTimestamp(false));
 
-		MyTools.uebOut("Random Age um 70 und Geburtsjahr", 2);
+		MyTools.h2("Random Age um 70 und Geburtsjahr", 2);
 		for (int i = 1; i <= 10; i++)
 		{
 			int age = DateTimeTools.getRandomAge(70);
@@ -36,7 +36,7 @@ public class DateTimeToolsTest
 			System.out.printf("Alter: %d, Geburtsjahr: %d %n", age, year);
 		}
 
-		MyTools.uebOut("Random Geburtsdatum um 40", 2);
+		MyTools.h2("Random Geburtsdatum um 40", 2);
 		try
 		{
 			for (int i = 1; i <= 10; i++)
@@ -48,7 +48,7 @@ public class DateTimeToolsTest
 			e.printStackTrace();
 		}
 
-		MyTools.uebOut("makeDate", 2);
+		MyTools.h2("makeDate", 2);
 		try
 		{
 			for (int i = 1; i <= 10; i++)
@@ -61,7 +61,7 @@ public class DateTimeToolsTest
 			e.printStackTrace();
 		}
 
-		MyTools.uebOut("makeRandomDate", 2);
+		MyTools.h2("makeRandomDate", 2);
 		try
 		{
 			for (int i = 1; i <= 10; i++)
@@ -75,7 +75,7 @@ public class DateTimeToolsTest
 			e.printStackTrace();
 		}
 
-		MyTools.uebOut("makeTime", 2);
+		MyTools.h2("makeTime", 2);
 		try
 		{
 			out(DateTimeTools.makeTime(15, 30, 20));
@@ -88,7 +88,7 @@ public class DateTimeToolsTest
 			e.printStackTrace();
 		}
 
-		MyTools.uebOut("makeTimeStamp", 2);
+		MyTools.h2("makeTimeStamp", 2);
 		try
 		{
 			out(DateTimeTools.makeTimestamp(2019, 3, 20));

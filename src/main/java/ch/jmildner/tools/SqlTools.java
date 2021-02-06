@@ -70,7 +70,7 @@ public class SqlTools
     public static void zeigeMetadaten(ResultSetMetaData md)
             throws SQLException
     {
-        MyTools.uebOut("zeigeMetadaten() ", 1);
+        MyTools.h2("zeigeMetadaten() ", 1);
 
         for (int i = 1; i <= md.getColumnCount(); i++)
         {
@@ -89,7 +89,7 @@ public class SqlTools
     private static void zeigeDaten(ResultSet rs, ResultSetMetaData md)
             throws SQLException
     {
-        MyTools.uebOut("zeigeDaten() ", 1);
+        MyTools.h2("zeigeDaten() ", 1);
 
         int anz = md.getColumnCount();
 
